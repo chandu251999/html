@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>hotel</title>
+        </head>
+        <body>
+            <form action="destination.html" method="GET">
+                <fieldset>
+                    <legend>personal details</legend>
+                    <label for="username">USERNAME:</label><input id="username" type="text" name="username" required autofocus placeholder="your username" pattern="[a-zA-Z]{3,}" title="plz enter more letters">
+                    <br>
+                    <label for="email">EMAIL:</label><input id="email" type="text" name="email" required pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="plz follow d pattern">
+                    <br>
+                    <label for="phone">TELNO.:</label><input id="phone" type="tel" name="telno" required pattern="[+]{1}[9]{1}[1]{1}[0-9]{,10}" title="plz follow pattern">
+                    <br>
+                    <select name="country" >
+                        <option value="india">INDIA</option>
+                        <option value="us">US</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </fieldset>
+                <br>
+                <fieldset>
+                   <legend>hotel details</legend>
+                   <label for="reqdate">DATE</label><input id="reqdate" type="date" name="RQdate" required min="2018-08-26">
+                   <br>
+                   <label for="no.">NO.</label><input id="no." type="number" name="no." required min="1" max="10">
+                   <br>
+                   <p>do u want meals?</p>
+                   <label for="yes">YES</label><input id="yes" type="radio" name="meals" value="yes" >
+                   <label for="no">NO</label><input id="no" type="radio" name="meals" value="no" >
+                   <br>
+                   <label for="balcony">BALCONY</label><input id="balcony" type="checkbox" name="bal" value="yes" checked>
+                   <br>
+                   <input type="image" src="image/buttons_PNG187.png" alt="submit" width="70" height="30">
+                </fieldset>
+            </form>
+        </body>
+    </html>
